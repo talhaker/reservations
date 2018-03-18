@@ -1,10 +1,44 @@
 <!DOCTYPE html>
+<html lang="en">
+
 <html>
+
 <head>
-  <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reservations</title>
+    <style>
+        .container {
+            border-bottom: 1px solid gray;
+        }
+    </style>
+
 </head>
+
 <body>
 
-  <script src="main.js"></script>
+    <!-- INDIVIDUAL EXERCISE EXTENSION 1 -->
+    <form id="my_form" action="">
+        <span>
+        Please enter name here:<br/><br/>
+        <input type="text" id="reservationName" onkeyup="echoReservations()" value="Name">
+      </span>
+        <span>
+        <button type="buttonFind" onclick="claimReservation()">Search Reservation</button>
+      </span>
+        <span>
+        <button type="buttonAdd" onclick="addNonReserved()">Add Reservation</button>
+      </span>
+        <br>
+    </form>
+
+    <!-- INDIVIDUAL EXERCISE EXTENSION 2 -->
+    <div id="wrapper">
+
+    </div>
+
+    <script src="main.js"></script>
 </body>
+
 </html>
